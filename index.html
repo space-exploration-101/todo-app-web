@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📝 Todo App</h1>
+        </header>
+
+        <div class="todo-form">
+            <input 
+                type="text" 
+                id="todo-input" 
+                placeholder="输入新的待办事项..."
+                class="todo-input"
+            >
+            <input 
+                type="date" 
+                id="todo-date" 
+                class="todo-date"
+            >
+            <button id="add-btn" class="btn btn-primary">添加</button>
+        </div>
+
+        <div class="todo-list-container">
+            <ul id="todo-list" class="todo-list">
+                <!-- Todo items will be inserted here -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
